@@ -54,9 +54,8 @@ int main(void)
   aboveAverage = tempSum/aboveCount;
 
   //Output
-  printf("%s %d\n", "Count: ", count);
-  printf("%s %3f\n", "Average: ", average);
-  printf("%s %d\n", "Above Count: ", aboveCount);
-  printf("%s %3f\n", "Above Average: ", aboveAverage);
+ printf("%s %3f\n", "Above Average: ", aboveAverage);
+
+ return 0;
 
 }
