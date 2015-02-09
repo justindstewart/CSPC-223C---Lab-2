@@ -5,6 +5,9 @@
 
 #include <stdio.h>
 
+//avg - Calculate and return average
+float avg(float sum, int count);
+
 int main(void)
 {
   int arr[100];       //Integer array
@@ -38,7 +41,7 @@ int main(void)
   }//END FOR
 
   //Calculate average and re-initialize tempSum
-  average = tempSum/count;
+  average = avg(tempSum, count);
   tempSum = 0.0;
   
   //FOR - Loop through array adding up sum
@@ -51,11 +54,16 @@ int main(void)
   }//END FOR
 
   //Calculate above average
-  aboveAverage = tempSum/aboveCount;
+  aboveAverage = avg(tempSum, aboveCount);
 
   //Output
  printf("%s %3f\n", "Above Average: ", aboveAverage);
 
  return 0;
 
+}
+
+//avg - Calculate and return average
+float avg(float sum, int count) {
+  return sum/count;
 }
