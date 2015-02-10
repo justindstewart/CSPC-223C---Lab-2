@@ -1,2 +1,2 @@
-# CSPC-223C---Lab-2
+# Above Average Average
 Lab 2 for C Programming Class - Spring 2015
